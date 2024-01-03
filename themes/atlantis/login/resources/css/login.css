@@ -81,7 +81,7 @@ p.instruction {
     --pf-c-button--after--BorderColor: black;
 }
 
-input#password {
+input#password, input#password-new, input#password-confirm {
     width: 80%;
 }
 
