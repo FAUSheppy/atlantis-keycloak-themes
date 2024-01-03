@@ -12,7 +12,7 @@
 }
 
 .pf-c-form-control {
-	background: #5d83a56b;
+    background: #5d83a56b;
     color: aliceblue;
     border: 2px solid #434c6c57;
     box-shadow: -1px -1px 1px 1px rgba(0,0,0,0.5);
@@ -77,6 +77,10 @@ p.instruction {
     text-decoration: none !important;
     border-width: 0;
     --pf-c-button--after--BorderColor: black;
+}
+
+input#password {
+    width: 80%;
 }
 
 .pf-c-button.pf-m-control:hover {
