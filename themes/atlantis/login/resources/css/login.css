@@ -65,9 +65,22 @@ p.instruction {
     /*￼transition: font-size 50ms linear; */
 }
 
+
 .pf-c-button.pf-m-control {
     border: solid var(--pf-global--BorderWidth--sm);
     border-color: rgba(230, 230, 230, 0.5);
+    background: #5d83a56b;
+    border-color: black;
+    box-shadow: unset;
+    width: 15%;
+    margin-left: 4.25%;
+    text-decoration: none !important;
+    border-width: 0;
+    --pf-c-button--after--BorderColor: black;
+}
+
+.pf-c-button.pf-m-control:hover {
+    background: #a8bed16b;
 }
 
 h1#kc-page-title {
