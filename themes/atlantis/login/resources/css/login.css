@@ -47,6 +47,8 @@ textarea.pf-c-form-control {
 
 p.instruction {
     margin: 5px 0;
+    background: aliceblue;
+    padding: 20px;
 }
 
 .pf-c-button.pf-m-primary {
