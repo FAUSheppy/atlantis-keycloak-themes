@@ -582,6 +582,10 @@ ul#kc-totp-supported-apps {
     .kc-social-grid .kc-social-icon-text {
         left: -15px;
     }
+
+    input#password, input#password-new, input#password-confirm {
+        width: 75%;
+    }
 }
 
 .login-pf-page .login-pf-signup {
