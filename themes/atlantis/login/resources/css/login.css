@@ -42,6 +42,10 @@ button{
     padding: 8px;
 }
 
+button:hover{
+    opacity: 0.7;
+}
+
 .login-pf body {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.potaris.de/media/001_squirrle.jpg?x=1920&encoding=webp") no-repeat center center fixed;
     background-size: cover;
