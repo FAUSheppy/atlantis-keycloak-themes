@@ -270,14 +270,17 @@ div.kc-logo-text span {
 }
 
 #kc-info-wrapper {
-    font-size: 13px;
+    font-size: 20px;
     padding: 15px 35px;
-    background-color: #F0F0F0;
+    background-color: #67d970;
+    color: black;
+    font-family: monospace;
 }
 
 #kc-form-options {
     width: 60%;
     float: left;
+    margin-bottom: 20px;
 }
 
 #kc-form-options span {
