@@ -43,7 +43,7 @@ button{
 }
 
 .login-pf body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("https://images.potaris.de/media/001_squirrle.jpg?x=1920&encoding=webp") no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.potaris.de/media/001_squirrle.jpg?x=1920&encoding=webp") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
 }
