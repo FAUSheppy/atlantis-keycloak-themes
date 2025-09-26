@@ -9,6 +9,12 @@
     padding-top: 10px;
 }
 
+#kc-totp-settings,
+#instruction1,
+.instruction,
+#kc-info-message,
+#kc-delete-text,
+.pf-l-stack.select-auth-container,
 .form-group{
     font-family: monospace;
     font-size: 20px;
@@ -17,6 +23,18 @@
     padding: 2px;
     padding-left: 10px;
     padding-right: 50px;
+    color: white !important;
+    font-size: 15px;
+    list-style-position: inside;
+    list-style-type: disclosure-open;
+}
+
+.pf-l-split{
+    width: 100%;
+}
+
+#instruction1{
+    padding: 20px !important;
 }
 
 .kc-feedback-text{
@@ -25,16 +43,34 @@
     margin-bottom: 20px;
     font-size: 10px;
     border-radius: 5px;
-    color: white !important;
+    color: white;
     font-family: monospace;
-    display: block;
+}
+
+.form-group button {
+  background-image: url('https://images.atlantishq.de/m/eye-svgrepo-com.svg');
+  width: 25px;
+  position: absolute;
+  margin: 8px;
+}
+
+#try-another-way{
+  font-weight: bold;
+  color: #f2c6c6;
+  background: unset;
+}
+
+.form-group button:hover {
+  background-image: url('https://images.atlantishq.de/m/eye-svgrepo-com.svg');
+  opacity: 0.5;
+  width: 25px;
+  position: absolute;
+  margin: 8px;
 }
 
 button{
-    background-image: url('https://images.atlantishq.de/m/eye-svgrepo-com.svg') !important;
     background-size: 100%;
     height: 25px;
-    width: 25px;
     background-color: #d7cacabf;
     line-height: -30px;
     border-radius: 2px;
@@ -43,18 +79,14 @@ button{
     padding: 8px;
 }
 
-button:hover{
-    opacity: 0.7;
-}
-
 .login-pf body {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.potaris.de/media/001_squirrle.jpg?x=1920&encoding=webp") no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("https://images.potaris.de/media/001_squirrle.jpg?x=1920&encoding=webp") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
 }
 
 .pf-c-form-control {
-    background: #5d83a56b;
+	background: #5d83a56b;
     color: aliceblue;
     border: 2px solid #434c6c57;
     box-shadow: -1px -1px 1px 1px rgba(0,0,0,0.5);
@@ -87,53 +119,69 @@ textarea.pf-c-form-control {
 	height: auto;
 }
 
+.alert-warning,
+.alert-info{
+    margin-bottom: 20px;
+}
+
 .pf-c-alert__title {
+    display: block;
     font-size: var(--pf-global--FontSize--xs);
 }
 
 p.instruction {
     margin: 5px 0;
-    background: aliceblue;
-    padding: 20px;
 }
 
+.pf-l-split,
+.pf-c-button.btn-default,
 .pf-c-button.pf-m-primary {
+    background-image: unset; /* just in case we inherited something weired here */
     background: #cfcfcfa8;
     background: linear-gradient(to top, #cfc6b054 0%, #cfcfcfc4 100%);
     color: #423636;
     font-weight: bold;
     padding: 15px;
     max-width: 200px;
-    min-width: 50%;
+    min-width: 45%;
     box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.5);
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
+    position: relative;
 }
 
+.pf-l-split__item,
+.pf-l-split{
+    min-width 100% !important;
+    width: 100%;
+    height: auto;
+    max-width: unset;
+    margin: 10px;
+}
+
+.pf-l-split__item{
+    margin: unset;
+    width: 100%;
+    max-width: unset !important;
+}
+
+#saveTOTPBtn{
+    margin-right: 10px; /* suckysucky keycloak */
+}
+
+.pf-c-button.btn-default:hover,
 .pf-c-button.pf-m-primary:hover {
     background: linear-gradient(to top, #cfc6b0a3 0%, #cfcfcfed 100%);
+    position: relative;
 ￼   /* font-size: 15.5px; */
     /*￼transition: font-size 50ms linear; */
 }
 
-
 .pf-c-button.pf-m-control {
     border: solid var(--pf-global--BorderWidth--sm);
     border-color: rgba(230, 230, 230, 0.5);
-    background: #5d83a56b;
-    border-color: black;
-    box-shadow: unset;
-    width: 15%;
-    margin-left: 4.25%;
-    text-decoration: none !important;
-    border-width: 0;
-    --pf-c-button--after--BorderColor: black;
-}
-
-input#password, input#password-new, input#password-confirm {
-    width: 80%;
-}
-
-.pf-c-button.pf-m-control:hover {
-    background: #a8bed16b;
 }
 
 h1#kc-page-title {
@@ -209,6 +257,7 @@ div.kc-logo-text span {
 }
 
 #kc-content {
+
     width: 100%;
 }
 
@@ -270,17 +319,14 @@ div.kc-logo-text span {
 }
 
 #kc-info-wrapper {
-    font-size: 20px;
+    font-size: 13px;
     padding: 15px 35px;
-    background-color: #67d970;
-    color: black;
-    font-family: monospace;
+    background-color: #F0F0F0;
 }
 
 #kc-form-options {
-    width: 60%;
-    float: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 #kc-form-options span {
@@ -511,9 +557,8 @@ ul#kc-totp-supported-apps {
     }
 
     #kc-info-wrapper {
-        width: 65%;
-        margin-left: 10%;
-        font-size: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: transparent;
     }
 
     .login-pf .container {
@@ -593,6 +638,14 @@ ul#kc-totp-supported-apps {
     font-size: var(--pf-global--FontSize--md);
     color: var(--pf-global--primary-color--100);
     font-weight: bold;
+    border: aliceblue;
+    border-bottom-style: none;
+    border-bottom-color: aliceblue;
+    border-bottom-style: groove;
+    border-bottom-color: black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: black;
 }
 
 .select-auth-box-desc {
@@ -635,10 +688,6 @@ ul#kc-totp-supported-apps {
 
     .kc-social-grid .kc-social-icon-text {
         left: -15px;
-    }
-
-    input#password, input#password-new, input#password-confirm {
-        width: 75%;
     }
 }
 
