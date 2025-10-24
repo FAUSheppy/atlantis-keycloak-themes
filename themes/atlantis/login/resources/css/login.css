@@ -33,6 +33,13 @@
     width: 100%;
 }
 
+/* fix bad password display */
+.pf-m-error{
+    display: blocK !important;
+    color: white !important;
+    max-width: 70%;
+}
+
 #instruction1{
     padding: 20px !important;
 }
