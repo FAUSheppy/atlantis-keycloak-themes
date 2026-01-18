@@ -784,3 +784,37 @@ ul#kc-totp-supported-apps {
     margin-bottom: 16px;
 }
 /* End Recovery codes */
+
+/* extra social logins */
+
+.kc-social-providers{
+    background: #1b41625e;
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 3px;
+
+}
+
+.kc-social-section hr{
+    display: none;
+}
+
+.c-social-links{
+    list-style: none;
+    background: #9fc888;
+    margin: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #f2c6c6;
+}
+
+.kc-social-provider-name{
+    
+}
+
+.kc-social-item{
+    text-decoration: none;
+    color: #020101;
+}
