@@ -807,6 +807,7 @@ ul#kc-totp-supported-apps {
     border-radius: 5px;
     border-style: solid;
     border-color: #f2c6c6;
+    padding: 8px;
 }
 
 .kc-social-provider-name{
