@@ -787,21 +787,20 @@ ul#kc-totp-supported-apps {
 
 /* extra social logins */
 
-.kc-social-providers{
+#kc-social-providers{
     background: #1b41625e;
     color: white;
     font-family: monospace;
     font-size: 12px;
     margin-top: 10px;
     padding: 3px;
-
 }
 
 .kc-social-section hr{
     display: none;
 }
 
-.c-social-links{
+.kc-social-links{
     list-style: none;
     background: #9fc888;
     margin: 5px;
